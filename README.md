@@ -1,2 +1,0 @@
-# PokemonSearch
-Created with CodeSandbox
