@@ -17,11 +17,16 @@ export default class App extends React.Component {
           const response = await fetch('https://pokeapi.co/api/v2/pokemon')
           const data = await response.json()
           console.log(data) // recieves the api data
+          const urls = data.results.map(name=> name.url)
+          console.log(urls)
+          this.setState=({pokemonList:data.results,
+        pokemonUrl:await fetch(urls)})
+
 
         }
         catch(error) {
             if(error) {
-                return `The error you recieved is ${error}`
+                return `The error you received is ${error}`
             }
         }
     }
