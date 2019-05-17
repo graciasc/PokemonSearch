@@ -7,15 +7,24 @@ export default class App extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      
+        pokemonList:{},
+        pokemonSpecialName:{}
     };
   }
   async componentDidMount() {
-const response = await fetch('https://pokeapi.co/api/v2/pokemon')
-const data = await response.json()
-console.log(data) // recieves the api data
+      try {
 
-  }
+          const response = await fetch('https://pokeapi.co/api/v2/pokemon')
+          const data = await response.json()
+          console.log(data) // recieves the api data
+
+        }
+        catch(error) {
+            if(error) {
+                return `The error you recieved is ${error}`
+            }
+        }
+    }
   render() {
     return (
       <div>
