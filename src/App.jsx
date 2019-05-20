@@ -33,14 +33,14 @@ export default class App extends React.Component {
   }
   render() {
     const loadString = 'Loading...'
-    // const name = this.state.isLoading === true ? this.state.pokemonList.map(item=> <li>{item} </li>) : loadString
+    // const name = this.state.isLoading === true ? this.state.pokemonList.map(item=> <li>{item} </li>) : <p>loadString</p>
 
     return (
       <div>
         <BrowserRouter>
           <Navbar />
           {/* maybe a component that renders the api with pokemon=this.state.pokemon*/}
-          {name}
+          {/* {name} */}
           <Route />
           <Footer />
         </BrowserRouter>
