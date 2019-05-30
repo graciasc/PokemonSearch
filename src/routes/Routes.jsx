@@ -7,6 +7,7 @@ import {About,Pokemon,Home} from '../components/';
 export default function Routes() {
   return (
     <Switch>
+    <Route exact path='/' component={Home} />
       <Route exact path='/Home' component={Home} />
       <Route path='/About Me' component={About} />
       <Route path='/pokemon' component={Pokemon} />
