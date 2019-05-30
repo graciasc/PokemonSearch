@@ -4,7 +4,7 @@ import Footer from './Footer/Footer'
 
 export default function HeadFooter() {
     return (
-        <div style={{ minHeight: "99vh", display: "flex", flexDirection: "column" }}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
         <NavBar/>
         <Footer/>
         </div>
