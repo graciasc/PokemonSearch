@@ -39,10 +39,8 @@ export default class Pokemon extends React.Component {
       );
     });
     //search filter through pokemon Api
-    if (this.state.loading) {
-      return <p>is Loading..</p>;
-    }
-const loading = this.state.loading ? 'loading' : 'Loaded'
+
+const loading = this.state.loading ? 'Loading' : 'Loaded'
     return (
       <div style={{minHeight: "99vh"}}>
           {loading}
