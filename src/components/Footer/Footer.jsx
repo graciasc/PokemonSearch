@@ -9,6 +9,10 @@ export default function Footer() {
       <p>
         Created By Gracias Claude <Icon name='copyright' />
       </p>
+<p>
+      {/* <Icon name='github' as='href'> </Icon> */}
+
+      </p>
     </Segment>
 
   );

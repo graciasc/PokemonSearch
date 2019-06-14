@@ -5,8 +5,8 @@ import {Segment,Image,Grid, Header} from 'semantic-ui-react'
 export default function Home() {
 
   return (
-    <div style={{minHeight: "99vh"}}>
-      <Segment attached padded='very'  >
+    <div style={{minHeight: "99vh", padding:50}}>
+      {/* <Segment attached padded='very'  > */}
       <Image circular centered bordered fluid size='big' src={img}/>
       <Grid centered padded columns={4}>
     <Grid.Column >
@@ -15,7 +15,9 @@ export default function Home() {
   </p>
     </Grid.Column>
 </Grid>
-      </Segment>
+      {/* </Segment> */}
+
+
 
     </div>
   );
