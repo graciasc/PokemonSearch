@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../assets/graciasc.jpg'
-import {Segment,Image,Grid, Header} from 'semantic-ui-react'
+import {Image,Grid, Header} from 'semantic-ui-react'
 
 export default function Home() {
 
