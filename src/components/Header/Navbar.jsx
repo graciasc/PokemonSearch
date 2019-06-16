@@ -1,9 +1,8 @@
 import React from 'react';
 import { Menu, Segment } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import Footer from '../Footer/Footer'
 export default function Head() {
-  const navData = ['Home', 'Pokemon', 'About Me'];
+  const navData = ['Home', 'Pokemon'];
   const menu = navData.map((item, i) => {
     return (
       <Menu.Item key={i} name={item} as={Link} to={`/${item}`}>
